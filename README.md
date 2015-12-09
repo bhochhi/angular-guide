@@ -1,0 +1,2 @@
+I have been using ui-router in my angular application for a while. However, I have to admit I might not have full depth knowledge and understanding of ui-router 
+regarding its archiecture and best use cases. Still I were able to use them in angularjs web app as well as ionic mobile apps. This is means its simple to use and easy to understand. So This time I actually want to understand in depth and document them for furture reference.
