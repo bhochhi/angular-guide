@@ -1,6 +1,12 @@
 Binding primitives when using ng-repeat
 ---
-Just trying to put my thoughts what happened today. So, I was trying to create a reusable component, a directive that can be used for various input types like range, dropdown and radio. Check the following js, you simply need to pass __options__ as an array, __type__ as an string and __value__ to to store the selected value. 
+Just trying to put my thoughts what happened today. So, I was trying to create a reusable component, a directive that can be used for various input types like range, dropdown and radio. Check the following js, you simply need to pass __options__ as an array, __type__ as an string and __value__ with two way binding "=", but is a primities where we want map the selected value. 
+
+```html
+
+<select-component ng-model="value", type="dropdown" name="{{name}}" options="options"></select-component>
+
+```
 
 ```javascript
 
@@ -42,6 +48,8 @@ return {
 
 ```
 
+What I found interesting, the ngModel binds the __value__ with selected value if you want are not using ng-repeat. However, this was not case when using ng-repeat. For component type like dropdown and range, when we are just using select/option and input[radio], we don't have problem at all. However, when using radio, the two way databing is not happening. After several hours of drilling, I found np-repeat actually creates the child scope and it doesn't create 2 way binding for parent scope object.
+So, the safe bet is avoid using primitives while working with ng-repeat if you need to bind with ngModel. 
 
 
 
