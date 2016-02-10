@@ -1,6 +1,6 @@
-Binding primitives
+Binding primitives when using ng-repeat
 ---
-So, I was trying to create a reusable component, a directive that can be used for various input types like range, dropdown and radio.
+Just trying to put my thoughts what happened today. So, I was trying to create a reusable component, a directive that can be used for various input types like range, dropdown and radio. Check the following js, you simply need to pass __options__ as an array, __type__ as an string and __value__ to to store the selected value. 
 
 ```javascript
 
@@ -42,7 +42,7 @@ return {
 
 ```
 
-Here my options was array of string and value was primitive, string that I wanted to bind using ngModel. This worked all find for various component types, like range and dropdown.
+
 
 
 ng-options
