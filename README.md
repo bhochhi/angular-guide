@@ -48,7 +48,7 @@ return {
 
 ```
 
-What I found interesting, the ngModel binds the __value__ with selected value if you want are not using ng-repeat. However, this was not case when using ng-repeat. For component type like dropdown and range, when we are just using select/option and input[radio], we don't have problem at all. However, when using radio, the two way databing is not happening. After several hours of drilling, I found np-repeat actually creates the child scope and it doesn't create 2 way binding for parent scope object.
+What I found interesting, the ngModel binds the __value__ with selected value if you want are not using ng-repeat. However, this was not case when using ng-repeat. For component type like dropdown and range, when we are just using select/option and input[radio], we don't have problem at all. However, when using radio, the two way data bining is not happening. After several hours of drilling, I found np-repeat actually creates the child scope and it doesn't create 2 way binding for parent scope object.
 So, the safe bet is avoid using primitives while working with ng-repeat if you need to bind with ngModel. 
 
 
