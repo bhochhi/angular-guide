@@ -1,3 +1,50 @@
+Binding primitives
+---
+So, I was trying to create a reusable component, a directive that can be used for various input types like range, dropdown and radio.
+
+```javascript
+
+function buildComponent(type){
+  var template;
+    switch (displayType) {
+      case 'dropdown':
+        template = 'dropdown partial';
+        break;
+      case 'radio':
+        template = 'radio partial';
+        break;
+      case 'range':
+      default:
+        template = 'range partial';
+        break;
+    }
+    return template;
+}
+
+function linker(scope,element,attrs){
+  element.html(buildComponent(scope.type)); //returns various html partial based on type.
+    $compile(element.contents())(scope);
+}
+
+app.directive('selectComponent',function(){
+
+return {
+  restrict:'E',
+  link: linker,
+  scope: {
+    type: '@',
+    options: "=?",
+    value: "=?",
+    name: '@'
+  }
+}
+});
+
+```
+
+Here my options was array of string and value was primitive, string that I wanted to bind using ngModel. This worked all find for various component types, like range and dropdown.
+
+
 ng-options
 ---
 Its important to use ng-options instead of ng-repeat when working with select/option component. The native select/option is only good for array of string values. However, if you have array of objects as select options, it will return the selected value as string, which means you might have to manually convert the object. Therefore, instead of doing following:
