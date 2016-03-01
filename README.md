@@ -1,3 +1,7 @@
+Angular Factory vs Service
+---
+http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/
+
 Binding primitives when using ng-repeat
 ---
 Just trying to put my thoughts what happened today. So, I was trying to create a reusable component, a directive that can be used for various input types like range, dropdown and radio. Check the following js, you simply need to pass __options__ as an array, __type__ as an string and __value__ with two way binding "=", but is a primities where we want map the selected value. 
