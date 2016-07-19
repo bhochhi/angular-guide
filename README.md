@@ -1,6 +1,7 @@
-Angular Factory vs Service
----
-http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/
+
+###Slush generator for Angular-app
+
+
 
 Binding primitives when using ng-repeat
 ---
