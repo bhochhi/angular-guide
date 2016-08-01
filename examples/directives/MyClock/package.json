@@ -1,0 +1,15 @@
+{
+  "name": "myclock",
+  "version": "1.0.0",
+  "description": "directive that updates dom to display current time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bhochhi/angular-guide/examples/directives/myclock"
+  },
+  "author": "Rupesh Bhochhibhoya <bhochhi@gmail.com>",
+  "license": "ISC"
+}
