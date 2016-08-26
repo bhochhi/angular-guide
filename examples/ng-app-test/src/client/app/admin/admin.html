@@ -5,7 +5,13 @@
         <div class="widget wviolet">
           <div ht-widget-header title="{{vm.title}}"></div>
           <div class="widget-content user">
-            <h3>TODO: Implement Your Features</h3>
+              <nvd3 options='vm.options' data='vm.data'></nvd3>
+          </div>
+          <div class="widget-content user">
+              <nvd3 options='vm.sparkLineOptions' data='vm.sparkLineData'></nvd3>
+          </div>
+          <div class="widget-content user">
+              <nvd3 options='vm.cumulativeLineChartOptions' data='vm.cumulativeLineChartData'></nvd3>
           </div>
           <div class="widget-foot">
             <div class="clearfix"></div>
