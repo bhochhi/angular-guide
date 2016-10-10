@@ -1,0 +1,19 @@
+<div ng-controller="AppCtrl" ng-cloak="" class="navBardemoBasicUsage" ng-app="MyApp">
+
+  <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab md-on-select="loadData(page)" ng-repeat="page in pages" label="{{::page.tab}}">
+        <md-content>
+          <div ng-if="page.isLoaded" id="{{page.id}}" ui-grid="page.gridOptions" class="grid">
+          {{page.gridOptions}}
+          </div>
+          <div ng-show="!page.isLoaded">
+          {{page.tab}} loading...</div>
+
+          </md-content>
+        </md-tab>
+  </div>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+-->
