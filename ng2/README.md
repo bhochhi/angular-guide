@@ -8,4 +8,13 @@
 7. MetaData
 8. Dependency Injection
 
+Other important pieces are:
+1. Router
+2. Testing
+3. Pipes
+4. Lifecycle Hooks
+5. HTTP
+6. Animations
+7. Events
+8. Forms
 
