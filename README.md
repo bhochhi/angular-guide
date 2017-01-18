@@ -1,6 +1,6 @@
 
-###Slush generator for Angular-app
- - 
+### [Angular 2](https://github.com/bhochhi/angular-guide/tree/master/ng2)
+  Also [official docs](https://angular.io/docs/) are great!!
 
 
 Binding primitives when using ng-repeat
